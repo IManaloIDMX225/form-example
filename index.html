@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-legend {color:green;}
-p {color:black;}
-button {background-color: brown;}
-</style>
+    <style>
+        legend {
+            color: green;
+        }
+
+        p {
+            color: black;
+        }
+
+        button {
+            background-color: green;
+            color: #ffff;
+        }
+
+        body {
+            background-color: greenyellow;
+        }
+    </style>
 </head>
+
 <body>
 
-<form name="contact" method="POST" data-netlify="true">
-    <fieldset>
-        <legend>please feel free to send a message</legend>
-        <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-
-        <p>
-            <label>Message: <textarea name="message"></textarea></label>
-        </p>
+    <form name="contact" method="POST" data-netlify="true">
         <fieldset>
-            <legend>
-                Would you like a reply?
-            </legend>
-            <input type="radio" name="reply" value="yes"> yes<br>
-            <input type="radio" name="reply" value="no"> no<br>
+            <legend>please feel free to send a message</legend>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <fieldset>
+                <legend>
+                    Would you like a reply?
+                </legend>
+                <input type="radio" name="reply" value="yes"> yes<br>
+                <input type="radio" name="reply" value="no"> no<br>
+            </fieldset>
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
         </fieldset>
-        <p>
-            <button type="submit">Send Message</button>
-        </p>
-    </fieldset>
-</form>
+    </form>
 
 </body>
+
 </html>
